@@ -1,0 +1,32 @@
+{
+  "name": "solana-wallet-manager",
+  "version": "1.0.0",
+  "description": "A tool for managing Solana wallets, including generating wallets, distributing SOL and tokens, and collecting balances.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "build": "pkg . --output solana-wallet-manager"
+  },
+  "bin": "./main.js",
+  "dependencies": {
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.41.0",
+    "bs58": "^4.0.1",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.2"
+  },
+  "pkg": {
+    "assets": [
+      ".env",
+      "ascii.txt"
+    ],
+    "targets": [
+      "node16-win-x64"
+    ],
+    "outputPath": "dist",
+    "scripts": "main.js",
+    "icon": "C:/path/to/your/icon.ico"
+  },
+  "author": "Sol DEV",
+  "license": "MIT"
+}
