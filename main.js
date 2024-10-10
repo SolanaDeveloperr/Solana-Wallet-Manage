@@ -142,4 +142,3 @@ const handleUserChoice = async (choice) => {
 };
 
 printAsciiArt();
-ConfirmAndsendTransaction();
